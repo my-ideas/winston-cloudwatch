@@ -71,18 +71,6 @@ describe('index', function() {
       transport.cloudwatchlogs.fakeOptions.region.should.equal('us-east-1');
     });
 
-    it('configures httpOptions if a proxyServer has been defined', function() {
-      var options = {
-        awsOptions: {
-          region: 'us-east-1'
-        },
-        proxyServer: 'http://test.com'
-      };
-      var transport = new WinstonCloudWatch(options);
-      stubbedAWS.config.update.calledOnce.should.equal(true);
-      stubbedAWS.config.update.args[0][0].httpOptions.agent.should.equal('fake');
-    });
-
   });
 
   describe('log', function() {

@@ -32,11 +32,7 @@ var WinstonCloudWatch = function(options) {
   this.errorHandler = options.errorHandler;
 
   if (this.proxyServer) {
-    AWS.config.update({
-      httpOptions: {
-        agent: require('proxy-agent')(this.proxyServer)
-      }
-    });
+    throw new Error('Support for proxy has been removed');
   }
 
   var config = {};
