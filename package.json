@@ -15,8 +15,11 @@
     "coveralls": "./node_modules/.bin/coveralls <./coverage/lcov.info",
     "update-dependencies": "./node_modules/.bin/npm-check-updates -ua && npm install"
   },
-  "repository": "https://github.com/lazywithclass/winston-cloudwatch",
-  "author": "me@lazywithclass.com",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/my-ideas/winston-cloudwatch",
+  "author": "tommaso.doninelli@my-ideas.it",
   "license": "MIT",
   "typings": "typescript/winston-cloudwatch.d.ts",
   "peerDependencies": {

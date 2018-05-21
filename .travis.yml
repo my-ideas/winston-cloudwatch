@@ -2,5 +2,11 @@ language: node_js
 node_js:
 - '0.10'
 before_install:
-- npm install winston
-after_success: 'npm run coveralls'
+- npm install winston aws-sdk
+after_success: npm run coveralls
+deploy:
+  provider: npm
+  api_key:
+    secure: UK+7NFdFIHUaZ5S8JD3O2C6OM72JDNwFTgzPG1XgCr/nMnVqI2bM7NRUg1CyTG/adxV3p1C36Ajq2rhur1i7q2HBR8JULhwoUj4SutKjDGmtJlWMsyzLVvC2f2qdj1UD0/r5k/KCl2zhrWWfuDh805PvcXbvC4QbvSX54baIn6EI77+ifimQ6v511vZS9hY0j9pblEiDOMnp+M31QHXeoobWheng7cjsi00wdJ1Wvh4Oo2tJRyiLu9jdPFQ7NwgSKLxA9AUWKckn8z/BubmlyIx0s13Be0Lef8m0UEys5omI7I2btcHxHu8JNetuhEgZGrHCOC8HZgApEMoPVo3c7ub7rUhBcmlFjfWRmw04oKfefX8oEv/uMYOxYeg7J0vFdeyLkd0N9Y5QgIcVPuOVmQG6D76Qjn40PiKcONoxRnfxuD6G5wryiFNMRZhV2LaKWjMNjZUlxLONPgcDBMowxBBNG/GetYQ2ttTS4ytWzMgckYX91Li6BntlUlFlyghKDI2Z0DU/weqCTqEIby0YoXUlvhJg8XCZ7UInBzsVNGCr+0yHp5AlGpVDdnN9OkRRRDM9DFNzEUFvZDwdjuaRyY51Bv2O97WLisjj5QHSmj8e3RHoZhwH/ozEvA9m+/TznLPqncUL1gwWKlPjqJEV9LQ0HWz6mMUHmnbt7pBB3BY=
+  on:
+    branch: master

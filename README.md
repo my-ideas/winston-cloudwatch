@@ -1,4 +1,5 @@
 # @my-ideas/winston-cloudwatch 
+[![Build Status](https://travis-ci.org/my-ideas/winston-cloudwatch.svg?branch=master)](https://travis-ci.org/my-ideas/winston-cloudwatch)
 
 Forked from [v1.13.1](https://github.com/lazywithclass/winston-cloudwatch/blob/master/CHANGELOG.md#1131)
 
