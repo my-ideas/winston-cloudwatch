@@ -7,10 +7,12 @@ Forked from [v1.13.1](https://github.com/lazywithclass/winston-cloudwatch/blob/m
 
 Mainly to reduce the footprint of this great module!
 
+* support for node v8 and higher only
 * `aws-sdk` and `winston` are peer dependencies
 * removed `chalk` - used only to colorize debug statement
 * removed `lodash` - where used only `_.isEmpty` which has been replaced with a lodash-compatible function
 * removed `proxy-agent` - no support for http proxy in this version
+
 
 ## Todo
 * Remove `async`  
